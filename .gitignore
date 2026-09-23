@@ -1,0 +1,19 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
+
+# Build Outputs & ZIP Files
+/dist/
+*.zip
+*.xpi
+*.crx
+
+# Temporary / Log files
+*.log
+npm-debug.log*

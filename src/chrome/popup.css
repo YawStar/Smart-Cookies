@@ -1,0 +1,241 @@
+body {
+  width: 450px;
+  background-color: #262626;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Header URL Link Color */
+.header a,
+.header a:link,
+.header a:visited {
+  color: #ff9900 !important;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.header a:hover,
+.header a:active {
+  color: #ffad33 !important;
+  text-decoration: underline;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+/* Base Button Styling & Smooth Transition */
+.btn {
+  flex: 1;
+  padding: 8px 4px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background-color 0.2s ease, opacity 0.2s ease, transform 0.1s ease, filter 0.2s ease;
+  user-select: none;
+}
+
+/* Default Colors */
+.btn-blue { background-color: #3b5998; }
+.btn-yellow { background-color: #d4a359; color: #000; }
+.btn-cyan { background-color: #2b78a2; }
+.btn-sky { background-color: #4682b4; }
+
+/* Mouse Hover State */
+.btn:hover {
+  filter: brightness(1.15);
+  opacity: 0.95;
+}
+
+/* Mouse Active/Click State */
+.btn:active {
+  filter: brightness(0.9);
+  transform: scale(0.98);
+}
+
+.block-btn {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* SVG Icon Styling */
+.icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+.controls {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls select {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+  padding: 2px 5px;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.controls select:hover {
+  border-color: #777;
+}
+
+.nowrap-label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.table-container {
+  max-height: 250px;
+  overflow-y: auto;
+  overflow-x: auto;
+  border: 1px solid #444;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+
+table.nowrap th, table.nowrap td {
+  white-space: nowrap;
+}
+
+th, td {
+  padding: 4px 8px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+th {
+  background-color: #1a1a1a;
+  position: sticky;
+  top: 0;
+  color: #aaa;
+}
+
+tr:nth-child(even) {
+  background-color: #2d2d2d;
+}
+
+/* Table Row Hover State */
+tr:hover {
+  background-color: #383838;
+}
+
+/* Footer & Details Styling */
+.footer {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.footer details summary {
+  cursor: pointer;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #ddd;
+  transition: color 0.2s ease;
+  user-select: none;
+}
+
+.footer details summary:hover {
+  color: #fff;
+}
+
+/* Footer Text Spacing */
+.footer-text {
+  margin: 6px 0 10px 0;
+  line-height: 1.4;
+  color: #bbb;
+  font-size: 12px;
+}
+
+/* Pure CSS Donate Button */
+.sponsor-buttons {
+  display: flex;
+  margin-top: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.css-donate-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e61c24;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 6px 22px 6px 16px;
+  border-radius: 50px;
+  font-family: Arial, sans-serif;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  user-select: none;
+}
+
+.css-donate-btn .heart-icon {
+  font-size: 18px;
+  line-height: 1;
+  color: #ffffff;
+  display: inline-block;
+  transform: translateY(-1px);
+}
+
+.css-donate-btn .btn-text {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.css-donate-btn:hover {
+  background-color: #ff1f29;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(230, 28, 36, 0.4);
+}
+
+.css-donate-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

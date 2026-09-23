@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="header">
+      Get cookies.txt for
+      <a id="site-url" href="#" target="_blank">Loading...</a>
+    </div>
+
+    <div class="btn-group">
+      <button id="btn-export" class="btn btn-blue">
+        Export
+        <svg class="icon" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"
+          />
+        </svg>
+      </button>
+      <button id="btn-export-as" class="btn btn-yellow">
+        Export As
+        <svg class="icon" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"
+          />
+        </svg>
+      </button>
+      <button id="btn-copy" class="btn btn-cyan">
+        Copy
+        <svg class="icon" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <button id="btn-export-all" class="btn btn-sky block-btn">
+      Export All Cookies
+      <svg class="icon" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"
+        />
+      </svg>
+    </button>
+
+    <div class="controls flex-between">
+      <label
+        >Export Format:
+        <select id="export-format">
+          <option value="netscape">Netscape</option>
+          <option value="json">JSON</option>
+        </select>
+      </label>
+      <label class="nowrap-label"
+        >Table Nowrap:
+        <input type="checkbox" id="chk-nowrap" checked />
+      </label>
+    </div>
+
+    <div class="table-container">
+      <table id="cookie-table" class="nowrap">
+        <thead>
+          <tr>
+            <th>Domain</th>
+            <th>Include Subdomains</th>
+            <th>Path</th>
+            <th>Secure</th>
+            <th>Expiry</th>
+            <th>Name</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Cookies data will be injected here -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="footer">
+      <details>
+        <summary>Support the Developer 💖</summary>
+        <p class="footer-text">
+          Enjoying this tool?<br />
+          Your support helps keep this project free, active, and updated for everyone! ✨
+        </p>
+
+        <div class="sponsor-buttons">
+          <a
+            href="https://yawstardancebox.github.io/donate/"
+            target="_blank"
+            class="css-donate-btn"
+          >
+            <span class="heart-icon">&#9829;</span>
+            <span class="btn-text">DONATE</span>
+          </a>
+        </div>
+      </details>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
