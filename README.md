@@ -12,9 +12,37 @@ A lightweight and privacy-focused cross-browser extension to export cookies in *
 ## 📁 Project Structure
 ```text
 YawStar-Smart-Cookies/
-├── src/
-│   ├── chrome/    # Source files for Google Chrome
-│   └── firefox/   # Source files for Mozilla Firefox
+│   .gitignore
+│   LICENSE
+│   README.md
+└───src
+    ├───chrome    # Source files for Google Chrome
+    │   │   background.js
+    │   │   manifest.json
+    │   │   popup.css
+    │   │   popup.html
+    │   │   popup.js
+    │   │
+    │   └───icons
+    │           icon128.png
+    │           icon16.png
+    │           icon32.png
+    │           icon48.png
+    │           icon64.png
+    │
+    └───firefox   # Source files for Mozilla Firefox
+        │   background.js
+        │   manifest.json
+        │   popup.css
+        │   popup.html
+        │   popup.js
+        │
+        └───icons
+                icon128.png
+                icon16.png
+                icon32.png
+                icon48.png
+                icon64.png
 ```
 
 ## 🛠️ Installation (Developer Mode)
